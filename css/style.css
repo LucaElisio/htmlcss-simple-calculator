@@ -1,7 +1,7 @@
 /* RESET */
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -11,18 +11,85 @@ img {
 
 /* main container style */
 .calculator{
-    width: 40%;
-    background-color: rgb(255, 174, 174);
+    width: 200px;
+
+    background-color: #eeecae;
     margin: 200px auto;
     border-radius: 10px;
-
-    /* debug */
-    height: 500px;
+    box-shadow: -2px 2px 5px black;
 }
 
 /* Header */
-.header{
-    background-color: #E1E1E1;
+header {
+    background-color: #eeecae;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    text-align: center;
+}
+
+/* DISPLAY */
+.result{
+    background-color: #244445;
+    color: #ffffff;
+    text-align: right;
+    padding: 10px;
+    font-family: 'Seven Segment';
+    font-size: 15px;
+}
+
+/* KEYBOARD */
+.wrapper{
+padding: 10px;
+}
+
+.keyboard {
+    display: flex;   
+}
+
+/* Numbers */
+.numbers{
+    flex-grow: 2;
+    padding: 5px;
+    height: 170px;
+}
+
+.numbers button{
+    background-color: #50a76f;
+    border: 0;
+    width: calc(100% / 3 - 3px);
+    height: calc(100% / 4 - 5px);
+    margin-bottom: 5px;
+}
+
+/* Operations */
+.operations{
+    flex-grow: 1;
+    /* background-color: red; */
+    padding: 5px;
+    margin: 0 auto;
+    height: 170px;
+}
+
+.operations button{
+    margin-bottom: 5px;
+    border: 0;
+    width: 100%;
+    height: calc(100% / 5 - 5px);
+    background-color: #244445;
+}
+
+button{
+    border-radius: 5px;
+    box-shadow: -2px 2px 1px #000000;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#action, #equal{
+    background-color: #a75050;
+    color: white;
+}
+
+#double-size{
+    width: calc(100% / 3 * 2 - 3px);
 }
