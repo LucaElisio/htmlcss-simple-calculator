@@ -5,12 +5,24 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+}
+
+/* main container style */
 .calculator{
     width: 40%;
     background-color: rgb(255, 174, 174);
     margin: 200px auto;
-
+    border-radius: 10px;
 
     /* debug */
     height: 500px;
+}
+
+/* Header */
+.header{
+    background-color: #E1E1E1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
