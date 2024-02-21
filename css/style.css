@@ -5,3 +5,12 @@
     box-sizing: border-box;
 }
 
+.calculator{
+    width: 40%;
+    background-color: rgb(255, 174, 174);
+    margin: 200px auto;
+
+
+    /* debug */
+    height: 500px;
+}
