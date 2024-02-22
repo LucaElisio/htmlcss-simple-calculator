@@ -12,16 +12,17 @@ img {
 /* main container style */
 .calculator{
     width: 200px;
-
-    background-color: #eeecae;
+    /* background-color: #eeecae; */
     margin: 200px auto;
     border-radius: 10px;
     box-shadow: -2px 2px 5px black;
+    background-image: linear-gradient(270deg, #fefcc7 0%, #bfbd8e 100%);
+    
 }
 
 /* Header */
 header {
-    background-color: #eeecae;
+    /* background-color: #eeecae; */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     text-align: center;
@@ -33,63 +34,66 @@ header {
     color: #ffffff;
     text-align: right;
     padding: 10px;
-    font-family: 'Seven Segment';
+    font-family: 'Seven Segment', sans-serif;
     font-size: 15px;
 }
 
 /* KEYBOARD */
-.wrapper{
-padding: 10px;
-}
-
-.keyboard {
-    display: flex;   
+.keyboard{
+    display: flex;
+    padding: 15px;
 }
 
 /* Numbers */
 .numbers{
-    flex-grow: 2;
-    padding: 5px;
-    height: 170px;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+
+    /* debug */
+    /* height: 100px;
+    background-color: firebrick; */
 }
 
 .numbers button{
-    background-color: #50a76f;
-    border: 0;
-    width: calc(100% / 3 - 3px);
-    height: calc(100% / 4 - 5px);
-    margin-bottom: 5px;
+    width: calc(100% / 3 - 10px);
+    margin-right: 10px;
+    background-color: #50A76F;
+    
 }
 
 /* Operations */
 .operations{
-    flex-grow: 1;
-    /* background-color: red; */
-    padding: 5px;
-    margin: 0 auto;
-    height: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
 }
 
 .operations button{
-    margin-bottom: 5px;
-    border: 0;
-    width: 100%;
-    height: calc(100% / 5 - 5px);
     background-color: #244445;
+    width: 100%;
 }
 
+/* Common button */
 button{
-    border-radius: 5px;
-    box-shadow: -2px 2px 1px #000000;
-    color: #ffffff;
-    font-weight: bold;
-}
-
-#action, #equal{
-    background-color: #a75050;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 0;
     color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: -1px 1px 2px black;
 }
 
-#double-size{
-    width: calc(100% / 3 * 2 - 3px);
+button.zero {
+    flex-grow: 1 ;
+}
+
+button.red{
+    background-color: #A75050;
+}
+
+button:hover {
+    background-color: gray;
 }
